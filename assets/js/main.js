@@ -75,6 +75,19 @@ const countingDown = () => {
 //       	JS-Vertiefung – BOM-Level_2_1
 // ===================================================
 
+// Aufgabenstellung:
+
+// Schreibe eine Funktion, die beim Start die Zahlen runter zählt.
+// Schau Dir die Ergebnisvorschau an.
+
+// Der HTML und CSS Code befindet sich im Kommentar.
+// Nutzen kannst Du:
+// setInterval()
+// clearInterval()
+// getElementsByClassName()/getElementById()
+// if, else if
+
+
 console.log("%c JS-Vertiefung – BOM-Level_2_1", "color: tomato");
 
 const countDown2 = () => {
