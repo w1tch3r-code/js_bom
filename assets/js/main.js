@@ -59,12 +59,18 @@ console.log("%c JS-Vertiefung – BOM-Level_1_2", "color: tomato");
 // if, else if
 // querySelector()
 
+let intervalId; // außerhalb der Funktion deklarieren
+
 const countingDown = () => {
+	if (intervalId) {
+		clearInterval(intervalId);
+	}
+
 	let counter = 100;
 	const zeit = document.querySelector(".zeit");
-	setInterval(() => {
+	intervalId = setInterval(() => {
 		if (counter < 0) {
-			clearInterval();
+			clearInterval(intervalId);
 		} else {
 			zeit.textContent = `${counter--}%`;
 		}
@@ -86,7 +92,6 @@ const countingDown = () => {
 // clearInterval()
 // getElementsByClassName()/getElementById()
 // if, else if
-
 
 console.log("%c JS-Vertiefung – BOM-Level_2_1", "color: tomato");
 
